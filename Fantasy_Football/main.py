@@ -20,7 +20,7 @@ y = np.array(train_data[predict])
 test_data = pd.read_csv("test_data.csv", sep=",")
 x_test = np.array(test_data)
 
-linear = linear_model.LassoCV(max_iter=10000)
+linear = linear_model.LassoCV(max_iter=1500)
 
 xdel = np.delete(X,0,1)
 xdel2 = np.delete(x_test,0,1)
